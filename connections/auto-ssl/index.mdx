@@ -1,0 +1,19 @@
+---
+title: Auto SSL
+description: SSL is automatically configured for known hosts to ensure secure connections.
+---
+
+When connecting to a host that matches our known hosts list below, the connection will automatically be configured to utilize SSL, enhancing security by encrypting data in transit.
+
+This includes automatically downloading any required public certificates, which verify the server's identity and ensures a trusted communication channel.
+
+SSL protects sensitive data from interception and tampering, providing peace of mind and a safer environment for your database operations.
+
+## Known Hosts
+ - AWS RDS
+ - Azure SQL
+ - CockroachDB Cloud
+ - Neon
+ - Supabase
+ - Timescale
+ - YugabyteDB

@@ -1,0 +1,25 @@
+---
+title: Supported Databases
+description: All the supported databases for DBCode
+---
+import { Image } from 'astro:assets';
+//Cut down the docs to just the supported databases, and return their slugs without the url!
+import { getCollection } from 'astro:content';
+export const databases = (await getCollection('docs', (page) => {
+	return page.slug.startsWith('supported-databases/');
+}))
+
+<div class="mb-10 grid grid-cols-2 sm:gap-12 md:grid-cols-3 lg:grid-cols-3">
+ {databases.map(db=>(
+	<a href={db.slug}>
+    <button  class="mt-10 flex items-center justify-center w-full gap-2 px-3 py-2 text-xs hover:scale-110 duration-300 font-semibold text-white transition-all" type="button"> 
+	<Image
+				class="noeffects w-1/2"
+				loading="lazy"
+				src={db.data.logo}
+				alt={db.data.title}
+			/>
+	</button>
+	</a>
+  ))}
+</div>

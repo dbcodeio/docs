@@ -1,0 +1,41 @@
+---
+title: Supported Providers
+description: Explore our list of supported cloud providers and learn how to connect and manage your databases seamlessly.
+---
+import { Image } from 'astro:assets';
+//Cut down the docs to just the providers, and return their slugs without the url!
+import { getCollection } from 'astro:content';
+export const providers = (await getCollection('docs', (page) => {
+	return page.slug.startsWith('cloud-providers/supported-providers/');
+})).map((post) => post.slug.replace('cloud-providers/supported-providers/', ''));
+
+<div class="mb-10 grid grid-cols-2 sm:gap-12 md:grid-cols-3 lg:grid-cols-4">
+ {providers.map(el=>(
+	<a href={`./supported-providers/${el}`}>
+    <button  class="mt-10 flex items-center justify-center w-auto gap-2 px-3 py-2 text-xs hover:scale-110 duration-300 font-semibold text-white transition-all border rounded-lg h-14   border-vulcan-700" type="button"> 
+	<Image
+				class="noeffects"
+				loading="lazy"
+				width="100"
+				src={import(`./logo-${el}.svg`)}
+				alt={el}
+			/>
+	</button>
+	</a>
+  ))}
+</div>
+
+
+#### How to Connect
+
+To connect to any of these providers, follow these general steps:
+
+1. **Open the DBCode Extension**: Launch Visual Studio Code and open the DBCode extension.
+2. **Add a New Connection**: Click on the "Add Connection" icon.
+3. **Select Your Provider**: Choose the desired cloud provider from the list on the right.
+4. **Authenticate**: Follow the authentication process specific to the provider.
+5. **Start Managing Your Databases**: Once connected, you can start managing your databases directly from Visual Studio Code.
+
+For detailed instructions on connecting to each provider, refer to the [connect a cloud provider](/docs/cloud-providers/connect) article.
+
+By supporting these leading cloud providers, DBCode ensures you have the flexibility and power to manage your databases efficiently and effectively within your development environment.

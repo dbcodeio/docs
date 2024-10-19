@@ -1,0 +1,29 @@
+---
+title: Zero Config
+description: Automatically add database connections found in .env and web.config files, or supported .db files.
+---
+## How It Works
+
+### Config Files
+
+DBCode looks for database connection information (either as a connection string or configuration) in the following locations within the root folder:
+
+1. **Env files (*.env):** Files that contain environment variables including database connection strings.
+2. **Web Config files (web.config):** Configuration files used by web applications that may include database connection settings.
+3. **DDev (.ddev/config.yaml):** YAML files used by DDev for configurations, including database connection details.
+
+If connection information is found and successfully parsed from these files, DBCode will automatically add it as a database connection.
+
+### Compatiable .db files
+
+DBCode also scans for compatible database files for supported databases in the root directory (currently .db file for SQLite). If such a file is found, it will be automatically added as a database connection.
+
+## Discovered Connections
+
+Automatically discovered connections are indicated by a compass icon (🧭), making it easy to identify and manage them.
+
+## Additional Config Types
+
+We recognize that there are many other types of configuration files and formats used for database connections.
+
+Please [let us know](https://github.com/dbcodeio/public/issues) if you have specific configuration file types or formats that you need DBCode to support.

@@ -1,0 +1,62 @@
+---
+title: Cloudflare D1
+logo: ./logo-d1.svg
+href: https://www.cloudflare.com/developer-platform/d1/
+---
+
+## Overview
+
+Create a serverless relational database in seconds with D1. With a familiar SQL query language, point-in-time recovery, and cost-effective pricing, you are empowered to build the next big thing.
+
+## API Token Authentication
+
+Cloudflare connections for a single database, or cloud provider are made using an API token. 
+
+To create an API token, follow these steps:
+
+1. Log in to the Cloudflare dashboard.
+2. Choose My Profile from the avatar menu icon in the top right corner.
+3. Click the API Tokens tab.
+4. Click the Create Token button.
+5. Click Get Started next to the Create Custom Token option.
+6. Enter a name for your token.
+7. Permissions: 
+	The following permissions are required for D1 access: 
+	- Account - D1 - Edit
+
+	If you wish to use the Cloudflare cloud provider, you will also need to grant the following permissions:
+	- Account - Account Settings - Read
+8. Configure option token options as needed (e.g. IP allowlist, TTL)
+9. Click the Continue to Summary button.
+10. Click the Create Token button.
+11. Copy the API token.
+
+More information on API tokens can be found in the [Cloudflare documentation](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/).
+
+## Connect Single Database
+
+To connect to a single D1 database, follow these general steps:
+
+1. **Open the DBCode Extension**: Launch Visual Studio Code and open the DBCode extension.
+2. **Add a New Connection**: Click on the "Add Connection" icon.
+3. **Complete new connection form**: Choose Cloudflare D1 as the type, and enter the required information.
+4. **Connect**: Click save to connect to your Cloudflare D1 database.
+5. **Start Managing Your Databases**: Once connected, you can start managing your databases directly from Visual Studio Code.
+
+For detailed instructions on connecting to Cloudflare D1, refer to the [Connect](/docs/get-started/connect) article.
+
+## Connect Multiple Databases
+
+To connect to Cloudflare as a cloud provider and access multiple databases, follow these general steps:
+
+1. **Open the DBCode Extension**: Launch Visual Studio Code and open the DBCode extension.
+2. **Add a New Connection**: Click on the "Add Connection" icon.
+3. **Select Your Provider**: Choose the Cloudflare cloud provider from the list on the right.
+4. **Authenticate**: Follow the authentication process specific to the provider.
+5. **Start Managing Your Databases**: Once connected, you can start managing your databases directly from Visual Studio Code.
+
+For detailed instructions on connecting to Cloudflare D1, refer to the [Connect a Cloud Provider](/docs/cloud-providers/connect) article.
+
+By using Cloudflare D1 with DBCode, you can connect to your Cloudflare D1 databases, query and manage your data, and visualize your results, all directly from Visual Studio Code.
+
+For more information about Cloudflare D1, check out  <a href="https://www.cloudflare.com/developer-platform/d1/" target="_blank">Cloudflare D1</a>.

@@ -1,0 +1,22 @@
+---
+title: Supabase
+description: Supabase is an open source Firebase alternative. 
+hideInNav: true 
+logo: ./logo-supabase.svg
+---
+
+## Requirements
+
+To set up Supabase with DBCode, you will need an access token.
+
+You can obtain an access token by following the instructions provided on the <a href="https://supabase.com/dashboard/account/tokens" target="_blank">Access Tokens</a> page in the dashboard.
+
+### Important Note
+
+**Database User Creation**: For the Supabase provider to work, DBCode creates a user in your database when you first connect to it. This user is called `dbcode` and is granted the `postgres` role. The password for this user is not stored and will be changed if you reconnect.
+
+## Connecting
+
+Once you have your access token, follow the steps in the [connect a cloud provider](/docs/cloud-providers/connect) article.
+
+For more information about Supabase, check out their <a href="https://supabase.com" target="_blank">website</a>.
