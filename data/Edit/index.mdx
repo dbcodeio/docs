@@ -38,4 +38,10 @@ If a primary key is not present on the table, a prompt appears to select `Column
 
 ![save changes](./save-changes.png)
 
+### Verifying Changes
 
+The paid editions of DBCode automatically validate update or delete operations before executing them on the database. This step is crucial to ensure that changes affect only the intended data.
+
+During the validation process, each row with an update or deletion is checked to confirm that only one unique row in the table is affected. If validation fails, the changes are not applied, and an error notification is provided.
+
+In contrast, the free edition does not include this verification step. Users of the free edition must acknowledge this before proceeding with any changes.
