@@ -1,50 +1,45 @@
 ---
 
-Title: Autocomplete
-
-Description: The Autocomplete feature in DBCode uses AI to offer intelligent, context-aware suggestions as you type SQL commands. It provides quick access to table names, column names, and SQL keywords, making query creation faster and more efficient.
-
-Order: 3
+title: Autocomplete  
+description: DBCode’s Autocomplete feature simplifies SQL query creation by offering a dropdown menu of intelligent, context-aware suggestions. These include table names, column names, and SQL keywords, helping you write queries faster and more accurately.  
+order: 3  
 
 ---
 
-## AI-Powered Autocomplete Feature in DBCode
+## Autocomplete Feature in DBCode  
 
-DBCode’s Autocomplete feature leverages AI to assist with SQL coding by providing real-time, context-aware suggestions. It intelligently recommends SQL commands, table names, columns, and functions as you type, and it can even convert natural language queries into SQL, making it easier to interact with your database.
+DBCode’s **Autocomplete** is designed to assist with SQL query creation by providing real-time, context-aware suggestions in a dropdown menu. This feature streamlines your workflow by reducing typing effort, improving accuracy, and enhancing productivity.  
 
-### Key Features of AI-Powered Autocomplete
+### Key Features of Autocomplete  
 
-1. **Contextual Suggestions Powered by AI:**
-   - Start typing a SQL command, and DBCode’s AI-powered Autocomplete will suggest contextually relevant options. The AI understands your query context, helping you complete complex SQL statements efficiently.
+1. **Context-Aware Dropdown Suggestions:**  
+   - As you type, a dropdown menu appears with suggestions for table names, column names, SQL commands, and functions relevant to your query context.  
 
-   ![context suggestion](./context-suggestion.png)
+   - For example, typing `SELECT` brings up options like `*`, column names, or tables, while `WHERE` suggests relevant fields for filtering.  
 
-2. **Natural Language to SQL Conversion:**
-   - Begin with `--` followed by a natural language question, and the AI will automatically generate the corresponding SQL query. For example, typing `-- find all actors who starred together in films` will prompt the AI to write the appropriate SQL code. This feature is available in both DBCode notebooks and SQL files, offering flexibility in usage.
+   ![context suggestion](./context-suggestion.png)  
 
-   ![autocomplete](./autocomplete.png)
+2. **Schema-Aware Recommendations:**  
+   - Autocomplete integrates with your database schema to suggest valid options based on the connected database.  
 
-3. **Schema-Aware Recommendations:**
-   - DBCode provides the AI with access to your database schema, allowing it to offer suggestions based on the specific tables, columns, data types, and relationships in your database. This ensures more accurate and relevant recommendations while reducing the risk of syntax errors.
+   - This ensures the suggestions include only accurate table names, column names, and data types, reducing the risk of errors.  
 
-4. **Optional GitHub Copilot Integration:**
-   - If GitHub Copilot is installed, DBCode integrates seamlessly with it for enhanced code-completion capabilities. If not, DBCode’s own AI model will power the Autocomplete, ensuring reliable support no matter your setup.
+3. **SQL Syntax Highlighting and Validation:**  
+   - Autocomplete supports SQL keywords and syntax, helping you construct valid queries and minimizing potential mistakes.  
 
-5. **Predictive Next-Line Suggestions:**
-   - The AI predicts and completes your SQL queries, often suggesting logical next steps in your code. For instance, if you begin a `SELECT` statement, the AI may recommend possible joins or conditions based on your current query context and schema.
+4. **Keyboard Navigation:**  
+   - Use the `Arrow Keys` to navigate the dropdown menu and press `Enter` or `Tab` to insert your selected option directly into your query.  
 
-   ![next line suggestion](./next-line-suggestion.png)
+### Benefits of Autocomplete  
 
-### Benefits of AI-Powered Autocomplete
+- **Speed:** Quickly locate and insert relevant fields, tables, or commands without needing to remember exact names or syntax.  
 
-- **Time-Saving:** Autocomplete reduces typing by predicting and generating parts of the query, helping you write SQL faster.
+- **Accuracy:** Schema-awareness ensures that suggestions are valid and contextually appropriate.  
 
-- **Improved Accuracy:** Schema awareness ensures accurate suggestions, minimizing the chance of syntax errors.
+- **Ease of Use:** A dropdown menu simplifies navigation, making it easy for users of all experience levels to write SQL queries.  
 
-- **Natural Language Support:** Transforming natural language questions into SQL queries simplifies the query-building process, making it accessible to users with less SQL experience.
-
-- **Smoother Workflow:** Intelligent suggestions make SQL coding more efficient, especially when working with complex queries that involve multiple tables and conditions.
+- **Error Reduction:** Autocomplete minimizes typos and syntax errors, leading to more reliable query execution.  
 
 ---
 
-DBCode’s AI-powered Autocomplete feature enhances SQL coding by combining schema-aware suggestions and natural language query generation. Whether you use GitHub Copilot or DBCode’s native AI, this feature improves productivity, reduces errors, and provides a seamless experience in both DBCode notebooks and SQL files.
+DBCode’s Autocomplete feature is an essential tool for writing SQL efficiently and accurately. Whether you're exploring a database schema, constructing complex queries, or working on repetitive tasks, this feature provides a streamlined and intuitive experience.

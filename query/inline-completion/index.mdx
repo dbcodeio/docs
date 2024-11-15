@@ -1,49 +1,49 @@
 ---
 
-Title: Inline Completion
-
-Description: The Inline Completion feature in DBCode enhances productivity by offering real-time code suggestions as you type, helping you write SQL queries and commands faster and with fewer errors.
-
-Order: 2
+title: Inline Completion  
+description: DBCode’s Inline Completion enhances SQL coding productivity by offering real-time, context-aware suggestions directly within your editor. This feature helps you write SQL queries faster and with fewer errors.  
+order: 2  
 
 ---
 
-### Inline Completion in DBCode
+## Inline Completion in DBCode  
 
-The Inline Completion feature in DBCode provides real-time suggestions while you write SQL queries and other commands within Visual Studio Code. This feature uses intelligent code prediction to help you complete commands accurately and quickly.
+DBCode’s **Inline Completion** feature provides intelligent, real-time suggestions directly within your code editor as you type SQL queries. This tool predicts and suggests the next part of your query, enabling a smoother and faster coding experience by reducing manual effort and potential errors.  
 
-#### How to Use Inline Completion
+### How to Use Inline Completion  
 
-1. **Start Typing a SQL Query:**
-   - Begin writing your SQL query or command in the editor (Sql File or DBCode Notebook) where you want to interact with your database.
+1. **Start Typing a SQL Query:**  
+   - Begin writing your SQL query or command in a DBCode-supported environment, such as a `.sql` file or a DBCode Notebook.  
 
-   - As you type, DBCode will automatically suggest relevant code completions based on the context of what you’re typing.
+   - As you type, Inline Completion displays light grey text suggesting how to complete your query based on the context.  
 
-   ![inline suggestion](./inline-suggestion.png)
+   ![inline suggestion](./inline-suggestion.png)  
 
-2. **Accept a Suggested Completion:**
-   - To accept a suggested completion, press the `Tab` or `Enter` key. This will insert the suggested code snippet directly into your editor.
+2. **Accept Suggestions:**  
+   - Press `Tab` or `Enter` to insert the suggested code snippet into your query.  
 
-   - You can use this feature to complete table names, column names, SQL keywords, and functions without needing to type them in full.
+   - Suggestions can include table names, column names, SQL keywords, or functions, saving you from typing them manually.  
 
-3. **Dismiss a Suggested Completion:**
-   - If the suggested completion is not what you want, you can simply continue typing, and the suggestion will update based on the new context.
-   
-   - Alternatively, you can press `Esc` to dismiss the current suggestion.
+3. **Dismiss Suggestions:**  
+   - To ignore a suggestion, simply keep typing, and the prediction will adjust dynamically to the new input.
 
-4. **Modify Suggestions as You Type:**
-   - The inline completion feature dynamically adjusts its suggestions as you continue typing, so you can get more precise completions as your query takes shape.
+   - Alternatively, press `Esc` to dismiss the current suggestion entirely.  
 
-   ![dynamic inline suggestion](./dynamic-inline-suggestion.png)
+4. **Dynamic Updates:**  
+   - Inline Completion updates its predictions in real-time as you continue typing, refining suggestions to align with the evolving context of your query.  
 
-#### Benefits of Using Inline Completion
+   ![dynamic inline suggestion](./dynamic-inline-suggestion.png)  
 
-- **Faster Query Writing:** Inline Completion speeds up query writing by predicting the most likely commands or names based on what you've typed, reducing the need for manual entry.
-  
-- **Reduced Syntax Errors:** By providing syntax-compliant suggestions, this feature helps minimize errors, especially for complex queries or long table/column names.
+### Benefits of Inline Completion  
 
-- **Improved Focus:** Inline Completion allows you to focus on the logic of your query without needing to look up or remember exact names and syntax.
+- **Speed:** Write queries faster by leveraging intelligent predictions that eliminate unnecessary typing.  
 
----
+- **Accuracy:** Reduce syntax errors with context-aware, compliant suggestions tailored to your database schema.  
 
-The Inline Completion feature in DBCode is an invaluable tool for users who want to write SQL queries more efficiently. By offering context-aware suggestions, it helps reduce errors, speeds up query development, and streamlines the coding experience in Visual Studio Code.
+- **Convenience:** Avoid interruptions by getting in-line predictions directly in the editor, without needing external references or dropdowns.  
+
+- **Focus:** Concentrate on query logic while the tool assists with syntax and structure.  
+
+---  
+
+DBCode’s Inline Completion is a powerful feature for SQL developers, streamlining query creation by predicting and suggesting contextually appropriate completions. Whether you’re a beginner or a seasoned professional, this tool enhances productivity and coding efficiency in Visual Studio Code.

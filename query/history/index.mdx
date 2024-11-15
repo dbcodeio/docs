@@ -1,59 +1,80 @@
 ---
 
-Title: History
+title: History  
+description: The History feature in DBCode automatically logs executed SQL queries, allowing you to review, reuse, and manage past queries with ease.  
+order: 4  
 
-Description: The History feature in DBCode automatically logs executed SQL queries, allowing you to review, reuse, and manage past queries with ease.
+---  
 
-Order: 4
+## Query History in DBCode  
 
----
+The History feature in DBCode keeps a log of all executed SQL queries, enabling you to revisit, reuse, and manage past commands efficiently. It’s a valuable tool for tracking query development, maintaining frequently used queries, and troubleshooting.  
 
-## Query History in DBCode
+### Enabling Query History  
 
-The History feature in DBCode provides a convenient log of all executed SQL queries, making it easy to revisit and reuse commands. This feature is valuable for tracking query development, maintaining frequently used queries, and troubleshooting by reviewing past commands.
+By default, the History feature is **disabled**. To enable it:  
 
-### Accessing Query History
+1. **Open DBCode Settings:**  
+   - In Visual Studio Code, click on the gear icon in the lower-left corner and select **Settings**.  
 
-1. **Open DBCode in Visual Studio Code:**
-   - Launch Visual Studio Code and click on the DBCode icon in the Activity Bar on the left.
+    ![settings](./settings.png)
 
-   ![dbcode icon](./dbcode-icon.png)
+2. **Search for DBCode Settings:**  
+   - In the settings search bar, type `DBCode History`.  
 
-2. **Open the History Panel:**
-   - In the DBCode sidebar, locate and click the **History** tab to access a list of previously executed queries.
+3. **Enable Query History:**  
+   - Locate the option to enable query history and toggle it on. Once activated, DBCode will start recording all executed SQL queries.  
 
-   ![history panel](./history-panel.png)
-
-### Using the History Panel
-
-1. **View Past Queries:**
-   - The History panel displays a chronological list of queries from different database connections.
-   - Use the `Expand All` icon to view all queries, and the `Queries Only` icon to display queries without other details.
-   - Filter queries with the `Filter` icon in the panel header to refine your view.
-
-   ![query list](./query-list.png)
-
-2. **Re-Run a Query:**
-   - To re-execute a previous query, click the **Load Query** icon next to the query. This loads the query into a new editor tab for the selected database connection.
-
-   ![run query](./run-query.png)
-
-3. **Edit and Copy Queries:**
-   - To copy a query, click the **Copy SQL** icon next to it in the History panel. Paste the copied query into an editor to modify or use it as a new template.
-
-   ![copy query](./copy-query.png)
-
-4. **Clear History:**
-   - To delete specific entries, click the **Delete** icon next to each query. Confirm the action in the prompt by selecting "Yes" to permanently remove it.
-
-   ![clear history](./clear-history.png)
-
-### Benefits of Using Query History
-
-- **Time-Saving:** Quickly rerun frequently used queries without retyping.
-- **Efficient Troubleshooting:** Review and troubleshoot past queries with ease.
-- **Organized Workflow:** Keep a comprehensive log of query development, making it easy to reference past work.
+   ![enable history](./enable-history.png)  
 
 ---
 
-The History feature in DBCode streamlines SQL management by keeping a detailed log of past queries, making database interaction in Visual Studio Code more efficient and organized.
+### Accessing Query History  
+
+1. **Open DBCode in Visual Studio Code:**  
+   - Launch Visual Studio Code and click the DBCode icon in the Activity Bar on the left.  
+
+   ![dbcode icon](./dbcode-icon.png)  
+
+2. **Open the History Panel:**  
+   - In the DBCode sidebar, click the **History** tab to access the list of previously executed queries.  
+
+   ![history panel](./history-panel.png)  
+
+---
+
+### Using the History Panel  
+
+1. **View Past Queries:**  
+   - The History panel shows a chronological list of queries from various database connections.  
+   - Use the `Expand All` icon to see all details or the `Queries Only` icon to focus solely on queries.  
+   - Apply filters using the `Filter` icon to narrow your view based on specific criteria.  
+
+   ![query list](./query-list.png)  
+
+2. **Re-Run a Query:**  
+   - Click the **Load Query** icon next to any query to reload it into a new editor tab for the selected database connection.  
+
+   ![run query](./run-query.png)  
+
+3. **Edit and Copy Queries:**  
+   - Use the **Copy SQL** icon to duplicate a query. Paste it into the editor to modify or use as a new template.  
+
+   ![copy query](./copy-query.png)  
+
+4. **Clear History:**  
+   - To delete a query, click the **Delete** icon next to it. Confirm the action by selecting "Yes" in the prompt.  
+
+   ![clear history](./clear-history.png)  
+
+---
+
+### Benefits of Using Query History  
+
+- **Time-Saving:** Quickly re-run frequently used queries without retyping.  
+- **Efficient Troubleshooting:** Easily review past queries to identify and resolve issues.  
+- **Organized Workflow:** Maintain a comprehensive log of query development for easy reference.  
+
+---
+
+By enabling and using the History feature in DBCode, you can streamline your workflow and make database interactions in Visual Studio Code more efficient and organized.
