@@ -5,7 +5,7 @@ description: Learn how to efficiently use query parameters in DBCode with variou
 
 ## Query Parameters in DBCode  
 
-DBCode supports flexible query parameter formats to help you write dynamic and secure queries. This guide explains the supported parameter formats, their optional components, and best practices when working with them.  
+DBCode supports flexible query parameter formats to help you write dynamic and secure queries. Query parameters can seamlessly share data between DBCode notebook cells, enabling more interactive and efficient workflows. This guide explains the supported parameter formats, their optional components, and best practices for effective usage.  
 
 ---
 
@@ -66,7 +66,18 @@ SELECT * FROM orders WHERE customer_name = {&customer name||John Doe||string}
 - DBCode will execute the query with the provided parameter values and display the result.
 
 ![Query Result](./query-result.png)
+---
 
+### Seamless Sharing Between Notebook Cells
+
+- Query parameters can share data across notebook cells. When you define a parameter in one cell, it can be referenced in subsequent cells.
+
+- DBCode will catch previously defined parameter values when you execute the cell, and a prompt will appear in the result panel, asking if you want to continue using the same value or modify it. If no changes are made, click on Continue to proceed.
+---
+
+### Saving Parameter Values (Optional)
+
+- If the Save Output feature is turned ON, DBCode saves the parameter values within the notebook, ensuring that they persist across sessions.
 ---
 
 ### Examples of Query Parameter Usage
